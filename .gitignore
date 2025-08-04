@@ -1,0 +1,11 @@
+# Ignore raw packet captures (large, not needed)
+*.pcap
+*.pcapng
+
+# Ignore backup or system-specific files
+.DS_Store
+Thumbs.db
+
+# If you want to keep XML/HTML scan results, DO NOT include these:
+# scan_results.xml
+# scan_results.html

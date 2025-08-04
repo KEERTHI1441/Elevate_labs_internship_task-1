@@ -1,0 +1,50 @@
+# Nmap 7.95 scan initiated Mon Aug  4 20:41:52 2025 as: /usr/lib/nmap/nmap -sS -oN scan_results.txt 192.168.1.125/24
+Nmap scan report for 192.168.1.1
+Host is up (0.0036s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+53/tcp   filtered domain
+80/tcp   open     http
+1900/tcp open     upnp
+MAC Address: C0:C9:E3:BD:83:2C (TP-Link Technologies)
+
+Nmap scan report for 192.168.1.101
+Host is up (0.020s latency).
+All 1000 scanned ports on 192.168.1.101 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: F2:47:35:E8:75:3B (Unknown)
+
+Nmap scan report for 192.168.1.106
+Host is up (0.0070s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT      STATE SERVICE
+49152/tcp open  unknown
+62078/tcp open  iphone-sync
+MAC Address: 78:5E:CC:1B:95:40 (Unknown)
+
+Nmap scan report for 192.168.1.121
+Host is up (0.0029s latency).
+Not shown: 993 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+135/tcp   open   msrpc
+2869/tcp  closed icslap
+3306/tcp  open   mysql
+16992/tcp closed amt-soap-http
+61900/tcp closed unknown
+62078/tcp closed iphone-sync
+63331/tcp closed unknown
+MAC Address: 64:5D:86:65:02:93 (Intel Corporate)
+
+Nmap scan report for 192.168.1.122
+Host is up (0.065s latency).
+All 1000 scanned ports on 192.168.1.122 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 3E:2F:C1:11:E9:90 (Unknown)
+
+Nmap scan report for 192.168.1.125
+Host is up (0.0000050s latency).
+All 1000 scanned ports on 192.168.1.125 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+# Nmap done at Mon Aug  4 20:42:08 2025 -- 256 IP addresses (6 hosts up) scanned in 15.42 seconds
