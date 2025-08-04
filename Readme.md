@@ -1,7 +1,5 @@
-Absolutely, Mona! Here's your `README.md` with **only step-by-step commands**, including **explanations for each**, formatted cleanly and clearly.
 
 ---
-
 
 # 🛡️ Task 1: Local Network Port Scanning & Service Analysis
 
@@ -87,7 +85,7 @@ ip.addr == 192.168.1.121 && tcp.port == 3306
 * Saved results in multiple formats for documentation
 * Filtered and observed specific service traffic in Wireshark
 
-```
+
 
 ---
 
