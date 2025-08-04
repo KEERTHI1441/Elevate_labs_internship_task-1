@@ -1,8 +1,6 @@
-Here you go, Mona — the **final complete `README.md` file** with everything **from Steps 1–7**, based on your Nmap scan results. You can copy and paste this entire block into your repo:
 
 ---
 
-````markdown
 # 🛡️ Task 1: Local Network Port Scanning & Service Analysis
 
 ## 🧪 Steps Performed
@@ -80,8 +78,7 @@ ip.addr == 192.168.1.121 && tcp.port == 3306
 🔹 Only shows packets where **TCP port is 3306** (MySQL service)
 
 ---
-
-### ✅ 6. Common Services on Open Ports
+### ✅ 5. Common Services on Open Ports
 
 Based on the Nmap scan results, the following common services were found on various IPs in the local network:
 
@@ -97,7 +94,7 @@ Based on the Nmap scan results, the following common services were found on vari
 
 ---
 
-### ✅ 7. Potential Security Risks from Open Ports
+### ✅ 6. Potential Security Risks from Open Ports
 
 Here are the potential security risks identified from the scanned open ports:
 
@@ -110,6 +107,12 @@ Here are the potential security risks identified from the scanned open ports:
 
 > ✅ These services should be monitored, restricted, or disabled if not needed, especially in unsecured or public-facing networks.
 
+## ✅ Outcome
+
+* Discovered devices and open ports using Nmap
+* Saved results in multiple formats for documentation
+* Filtered and observed specific service traffic in Wireshark
+
 ---
 
 ## ✅ Outcome
@@ -121,4 +124,5 @@ Here are the potential security risks identified from the scanned open ports:
 
 
 ---
+
 
