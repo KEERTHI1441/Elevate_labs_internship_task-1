@@ -107,13 +107,6 @@ Here are the potential security risks identified from the scanned open ports:
 
 > ✅ These services should be monitored, restricted, or disabled if not needed, especially in unsecured or public-facing networks.
 
-## ✅ Outcome
-
-* Discovered devices and open ports using Nmap
-* Saved results in multiple formats for documentation
-* Filtered and observed specific service traffic in Wireshark
-
----
 
 ## ✅ Outcome
 
