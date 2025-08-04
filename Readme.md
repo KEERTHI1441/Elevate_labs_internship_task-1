@@ -1,6 +1,8 @@
+Here you go, Mona — the **final complete `README.md` file** with everything **from Steps 1–7**, based on your Nmap scan results. You can copy and paste this entire block into your repo:
 
 ---
 
+````markdown
 # 🛡️ Task 1: Local Network Port Scanning & Service Analysis
 
 ## 🧪 Steps Performed
@@ -79,12 +81,43 @@ ip.addr == 192.168.1.121 && tcp.port == 3306
 
 ---
 
+### ✅ 6. Common Services on Open Ports
+
+Based on the Nmap scan results, the following common services were found on various IPs in the local network:
+
+| IP Address    | Port  | Service     | Description                                     |
+| ------------- | ----- | ----------- | ----------------------------------------------- |
+| 192.168.1.1   | 22    | SSH         | Secure remote login                             |
+|               | 80    | HTTP        | Web interface (likely router admin panel)       |
+|               | 1900  | UPNP        | Universal Plug and Play (auto device discovery) |
+| 192.168.1.106 | 49152 | -           | High/random port, used by apps/devices          |
+|               | 62078 | iPhone-sync | Apple device communication                      |
+| 192.168.1.121 | 135   | MSRPC       | Windows Remote Procedure Call                   |
+|               | 3306  | MySQL       | MySQL database service                          |
+
+---
+
+### ✅ 7. Potential Security Risks from Open Ports
+
+Here are the potential security risks identified from the scanned open ports:
+
+* **SSH (Port 22)** — If weak passwords are used, this service could be brute-forced.
+* **HTTP (Port 80)** — Web interfaces without HTTPS can expose credentials and are vulnerable to MITM attacks.
+* **UPNP (Port 1900)** — Known for being insecure; may allow unauthorized port forwarding.
+* **iPhone-sync (Port 62078)** — May expose private data if synced with untrusted hosts.
+* **MSRPC (Port 135)** — Targeted by many Windows-based exploits; should be behind a firewall.
+* **MySQL (Port 3306)** — Should never be exposed publicly without firewall and authentication; vulnerable to database leaks.
+
+> ✅ These services should be monitored, restricted, or disabled if not needed, especially in unsecured or public-facing networks.
+
+---
+
 ## ✅ Outcome
 
 * Discovered devices and open ports using Nmap
 * Saved results in multiple formats for documentation
 * Filtered and observed specific service traffic in Wireshark
-
+* Identified exposed services and evaluated their risk level
 
 
 ---
